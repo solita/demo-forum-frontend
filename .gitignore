@@ -1,0 +1,13 @@
+# Logs
+logs
+*.log
+
+# Dependency directory
+node_modules
+
+# Other
+.DS_Store
+.idea
+
+# Output files
+.nyc_output/
