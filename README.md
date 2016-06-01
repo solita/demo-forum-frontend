@@ -9,13 +9,13 @@ Frontend code for this lab is written in EcmaScript 2015 (JavaScript ES6) and it
 # Prerequisites
 
 1. Install Chrome or Firefox
-2. Install (React Developer Tools)[https://github.com/facebook/react-devtools]
+2. Install [React Developer Tools](https://github.com/facebook/react-devtools)
 
-Things will be demoed on Google Chrome, but Mozilla Firefox or Microsoft Edge should be fine too. Edge does not yet have the (React Developer Tools)[https://github.com/facebook/react-devtools].
+Things will be demoed on Google Chrome, but Mozilla Firefox or Microsoft Edge should be fine too. Edge does not yet have the [React Developer Tools](https://github.com/facebook/react-devtools).
 
 # Setup
 
-Important things first, to get things running you will have to have (node)[https://nodejs.org/en/] installed, preferrably version 6 (current version, not LTS).
+Important things first, to get things running you will have to have [node](https://nodejs.org/en/) installed, preferrably version 6 (current version, not LTS).
 
 1. Verify that was installed by running the following command `node --version` returns the node version number `v6.2.0`.
 
@@ -25,6 +25,6 @@ Important things first, to get things running you will have to have (node)[https
 
 # Testing
 
-For component testing we are using AVA test runner in conjuction with (Enzyme)[http://airbnb.io/enzyme/] to test React components.
+For component testing we are using AVA test runner in conjuction with [Enzyme](http://airbnb.io/enzyme/) to test React components.
 
 Tests can be run with `npm run test`, tests can be found under the `./test/` -folder. AVA searches this folder automatically.
