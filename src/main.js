@@ -9,9 +9,9 @@ import ReactDOM from 'react-dom';
 import './common/base.css';
 
 // Component
-import App from './components/app';
+import ForumContainer from './components/ForumContainer';
 
 // Application Root in DOM
 const APPLICATION_ELEMENT_ID = 'demo-app';
 
-ReactDOM.render(<App />, document.getElementById(APPLICATION_ELEMENT_ID));
+ReactDOM.render(<ForumContainer />, document.getElementById(APPLICATION_ELEMENT_ID));

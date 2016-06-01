@@ -13,6 +13,9 @@ Frontend code for this lab is written in EcmaScript 2015 (JavaScript ES6) and it
 
 Things will be demoed on Google Chrome, but Mozilla Firefox or Microsoft Edge should be fine too. Edge does not yet have the [React Developer Tools](https://github.com/facebook/react-devtools).
 
+1. Install lightweight texteditor, such as [Atom](https://atom.io/)
+2. Install React (.jsx) support for Atom [https://atom.io/packages/react](https://atom.io/packages/react)
+
 # Setup
 
 Important things first, to get things running you will have to have [node](https://nodejs.org/en/) installed, preferrably version 6 (current version, not LTS).

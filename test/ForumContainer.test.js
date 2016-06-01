@@ -4,10 +4,10 @@ import test from 'ava';
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import App from '../src/components/app';
+import ForumContainer from '../src/components/ForumContainer';
 
 test('render with container div', t => {
-  const wrapper = shallow(React.createElement(App));
+  const wrapper = shallow(React.createElement(ForumContainer));
   t.is(wrapper.find('#container').length, 1);
 });
 

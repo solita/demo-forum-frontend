@@ -1,11 +1,13 @@
 import React from 'react';
 
-export default React.createClass({
+const ForumContainer = React.createClass({
   render: () => {
     return (
       <div className="container">
         Hello!
       </div>
-    );
+    )
   }
 });
+
+export default ForumContainer;
