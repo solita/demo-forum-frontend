@@ -35,8 +35,7 @@ module.exports = {
   // Necessary plugins for hot load
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin(),
-    new ExtractTextPlugin('style.css', { allChunks: true })
+    new webpack.NoErrorsPlugin()
   ],
 
   // Transform source code using Babel and React Hot Loader
@@ -50,7 +49,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader')
+        loader: 'style-loader!css-loader!postcss-loader'
       }
     ]
   },
@@ -64,6 +63,7 @@ module.exports = {
   postcss: [
     require('autoprefixer'), // Automatically include vendor prefixes
     require('postcss-nested'), // Enable nested rules, like in Sass
-    require('postcss-import') // Enable @import
+    require('postcss-import'), // Enable @import
+    require('postcss-css-variables') // Enables future-proof way of using CSS variables
   ]
 }

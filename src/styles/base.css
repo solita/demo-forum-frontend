@@ -1,0 +1,54 @@
+@import 'normalize.css';
+@import '_colors.css';
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  background-color: var(--dark-gray);
+}
+
+h1, h2, h3, h4, h5, p {
+  color: var(--white);
+}
+
+pre {
+  color: var(--white);
+}
+
+input[type="text"] {
+  border: 0;
+  outline: 0;
+}
+
+input[type="text"], button {
+  display: inline-block;
+  padding: 1rem;
+}
+
+button {
+  position: relative;
+  cursor: pointer;
+  color: var(--pink);
+  outline: 0;
+  border: .15rem solid var(--pink);
+  background-color: var(--white);
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: var(--medium-gray);
+  }
+
+  &:active {
+    background-color: var(--light-gray);
+  }
+}
+
+.container {
+  margin: 0;
+  padding: 1rem;
+}

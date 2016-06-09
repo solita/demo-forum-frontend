@@ -28,6 +28,14 @@ Important things first, to get things running you will have to have [node](https
 
 # Testing
 
-For component testing we are using AVA test runner in conjuction with [Enzyme](http://airbnb.io/enzyme/) to test React components.
+For component testing we are using AVA test runn  er in conjuction with [Enzyme](http://airbnb.io/enzyme/) to test React components.
 
 Tests can be run with `npm run test`, tests can be found under the `./test/` -folder. AVA searches this folder automatically.
+
+# Additional resources
+[http://jeffcarp.github.io/frontend-hyperpolyglot/](http://jeffcarp.github.io/frontend-hyperpolyglot/)
+
+# Where to continue from here?
+- Elm
+- React + Redux (time-travel)
+- Cycle.js

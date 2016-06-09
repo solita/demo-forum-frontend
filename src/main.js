@@ -6,7 +6,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Styling
-import './common/base.css';
+import './styles/base.css';
 
 // Component
 import ForumContainer from './components/ForumContainer';
