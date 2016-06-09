@@ -39,3 +39,35 @@ Tests can be run with `npm run test`, tests can be found under the `./test/` -fo
 - Elm
 - React + Redux (time-travel)
 - Cycle.js
+
+# Steps
+
+High level overview what each step contains
+
+## stage-0
+  ForumContainer component
+  main, boostrapping application to dom
+
+## stage-1
+  SingleTopic component
+  ForumContainer, mapping items to components
+
+## stage-2
+  moment.js timehandling library
+  Message component
+  SingleTopic, map messages to Message component
+
+## stage-3
+  axios http-promise library, communication with backend using GET
+    ForumContainer
+    SingleTopic
+
+## stage-4
+  SendText re-usable component
+
+## stage-5
+  Communication with backend using axios by using POST
+    ForumContainer
+    SingleTopic
+
+# Final
