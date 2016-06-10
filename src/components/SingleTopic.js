@@ -36,7 +36,7 @@ class SingleTopic extends React.Component{
     });
 
     if (isActive) {
-      axios.get(`http://localhost:8080/api/topic/${id}/message`)
+      axios.get(`http://localhost:8080/topic/${id}/message`)
       .then((response) => {
         let messages = response.data;
         this.setState({
