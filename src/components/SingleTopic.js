@@ -54,19 +54,7 @@ class SingleTopic extends React.Component{
   // 2. Create message with POST
   // 3. Update state
   sendText(content) {
-    const id = this.state.id;
 
-    axios.post(`http://localhost:8080/topic/${id}/message`, { content })
-      .then((response) => {
-        let newMessage = response.data;
-        let messages = [...this.state.messages, newMessage];
-        this.setState({
-          messages
-        })
-      })
-      .catch((response) => {
-        console.log(response);
-      });
   }
 
   render() {

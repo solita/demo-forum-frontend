@@ -44,17 +44,6 @@ class ForumContainer extends React.Component{
   // 2. Set state to have the newly created topic prepended to topics
   sendText(title) {
     console.log(title);
-    axios.post('http://localhost:8080/topic', { title })
-      .then((response) => {
-        let newTopic = response.data;
-        let topics = [newTopic, ...this.state.topics];
-        this.setState({
-          topics
-        });
-      })
-      .catch((response) => {
-        console.log(response);
-      });
   }
 
   render() {
