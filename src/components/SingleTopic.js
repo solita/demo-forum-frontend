@@ -1,9 +1,6 @@
 // React import, we need to do this for every component
 import React from 'react';
 
-// Child components
-import Message from './Message';
-
 // Mock data
 import MockMessages from '../mock/messages';
 
@@ -50,7 +47,7 @@ class SingleTopic extends React.Component{
         </h2>
 
         { /* Pass message forward to child component as prop */ }
-        {this.state.isActive && this.state.messages.map((message, i) => <Message key={i} ref={`message-${i}`} message={message} />)}
+        {this.state.isActive && this.state.messages.map((message, i) => <p key={i}>{message.content}</p>)}
 
       </section>
     )
