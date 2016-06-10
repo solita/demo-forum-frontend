@@ -38,8 +38,15 @@ Tests can be run with `npm run test`, tests can be found under the `./test/` -fo
 # Where to continue from here?
 - Elm
 - React + Redux (time-travel)
+- [React Native](https://facebook.github.io/react-native/)
 - Cycle.js
 
+Good resources to continue learning about React and frontend development in general:
+[https://reactforbeginners.com/](https://reactforbeginners.com/) (beginner friendly)
+[https://learnredux.com/](https://learnredux.com/) (advanced)
+[https://www.codeschool.com/learn](https://www.codeschool.com/learn)
+[https://github.com/getify/You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS)
+[https://frontendmasters.com/](https://frontendmasters.com/)
 # Steps
 
 High level overview what each step contains
