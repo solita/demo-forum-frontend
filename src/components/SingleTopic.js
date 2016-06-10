@@ -6,7 +6,6 @@ import axios from 'axios';
 
 // Child components
 import Message from './Message';
-import SendText from './SendText';
 
 // Mock data
 import MockMessages from '../mock/messages';
@@ -49,14 +48,6 @@ class SingleTopic extends React.Component{
     }
   }
 
-  // Creates new message for given topics
-  // 1. Get current id from props
-  // 2. Create message with POST
-  // 3. Update state
-  sendText(content) {
-
-  }
-
   render() {
     // Shorter calls for prop
     const topic =  this.props.topic;
@@ -76,8 +67,6 @@ class SingleTopic extends React.Component{
         { /* Pass message forward to child component as prop */ }
         {this.state.isActive && this.state.messages.map((message, i) => <Message key={i} ref={`message-${i}`} message={message} />)}
 
-        { /* Pass parent function as onSendText to child */ }
-        {this.state.isActive && <SendText onSendText={this.sendText.bind(this)} hasH2={false} placeholder={'Type response here...'} />}
       </section>
     )
   }

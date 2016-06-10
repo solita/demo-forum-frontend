@@ -51,9 +51,6 @@ class ForumContainer extends React.Component{
       <div className="container">
         <h1 className="forum__title">frontend demo</h1>
 
-        { /* Pass parent function as onSendText to child */ }
-        <SendText onSendText={this.sendText.bind(this)} hasH2={true} placeholder={'Type topic title here...'} />
-
         { /* Mapping over multiple items is done with JavaScript */ }
         {this.state.topics.map((topic, i) => <SingleTopic key={topic.id} topic={topic} ref={'item' + topic.id} />)}
 
