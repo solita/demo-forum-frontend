@@ -1,11 +1,7 @@
 import React from 'react';
 
-// axios for ajax
-import axios from 'axios';
-
 // Child components
 import SingleTopic from './SingleTopic';
-import SendText from './SendText';
 
 // Mock data
 import MockTopics from '../mock/topics';
@@ -19,32 +15,18 @@ class ForumContainer extends React.Component{
   constructor(props) {
     super(props)
 
+    const topics = MockTopics;
     this.state = {
-      topics: []
+      topics
     };
   }
 
   componentDidMount() {
     // 1. Get data from server
     // 2. Update current state with data received (setState)
-    axios.get('http://localhost:8080/topic')
-      .then((response) => {
-        let topics = response.data;
-        this.setState({
-          topics
-        });
-      })
-      .catch((response) => {
-        console.log(response);
-      });
   }
 
-  // SendText child will call this function
-  // 1. Send message to server
-  // 2. Set state to have the newly created topic prepended to topics
-  sendText(title) {
-    console.log(title);
-  }
+
 
   render() {
     return (

@@ -1,9 +1,6 @@
 // React import, we need to do this for every component
 import React from 'react';
 
-// axios for ajax
-import axios from 'axios';
-
 // Child components
 import Message from './Message';
 
@@ -16,10 +13,11 @@ class SingleTopic extends React.Component{
     super(props);
 
     // State that is specific to this component
+    const messages = MockMessages;
     this.state = {
       id: props.topic.id,
       isActive: false,
-      messages: []
+      messages
     };
   }
 
@@ -33,19 +31,6 @@ class SingleTopic extends React.Component{
     this.setState({
       isActive
     });
-
-    if (isActive) {
-      axios.get(`http://localhost:8080/topic/${id}/message`)
-      .then((response) => {
-        let messages = response.data;
-        this.setState({
-          messages
-        });
-      })
-      .catch((response) => {
-        console.log(response);
-      });
-    }
   }
 
   render() {
