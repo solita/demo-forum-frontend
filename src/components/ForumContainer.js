@@ -1,8 +1,5 @@
 import React from 'react';
 
-// Child components
-import SingleTopic from './SingleTopic';
-
 // Mock data
 import MockTopics from '../mock/topics';
 
@@ -34,7 +31,7 @@ class ForumContainer extends React.Component{
         <h1 className="forum__title">frontend demo</h1>
 
         { /* Mapping over multiple items is done with JavaScript */ }
-        {this.state.topics.map((topic, i) => <SingleTopic key={topic.id} topic={topic} ref={'item' + topic.id} />)}
+        {this.state.topics.map((topic, i) => <p key={topic.id}>{topic.title}</p>)}
 
         { /* start with mock data
         <pre>{JSON.stringify(MockTopics, null, 2) }</pre>
